@@ -57,8 +57,8 @@ class ProductPurchaseCount implements ResolverInterface
         Field $field,
         $context,
         ResolveInfo $info,
-        array $value = null,
-        array $args = null
+        ?array $value = null,
+        ?array $args = null
     ): array {
         if (!$this->config->isEnabled()) {
             throw new GraphQlInputException(__('Space ProductPurchaseCount module is not enabled.'));
